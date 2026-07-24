@@ -1,0 +1,110 @@
+<html>
+<h2>	<a href="jie-public.cls" target="_blank">Click Here to Download the JIEA Style Sheet </A></h2>
+<head>
+<BODY LINK="blue" VLINK="blue" ALINK="blue" BGCOLOR="#FFFFCC">
+<title>RMMC Styles</title>
+<style>
+
+body {
+  font-size: 12pt;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+pre, code {
+  font-size: 11pt;
+}
+
+pre emph {
+  font-style: italic;
+}
+
+pre b {
+  font-weight: bold;
+}
+
+</style>
+
+</head>
+
+<body>
+<p></p>
+
+<p>We strongly encourage authors to use this style file when preparing manuscripts for publication in Journal of Integral Equations and Applications.</p>
+<p>This style file can be saved to the same folder as the paper you are preparing.</p>
+<p><b>This style file produces pages of the correct size for our journals. Please do not change the page size.</b></p>
+<p>Please note that employing
+generic (non-typographic) tagging of content greatly eases transition from submissions to publication-ready articles.</p>
+
+<p>The preferred general form of a submitted document is:</p>
+
+<pre>
+     \<b>documentclass</b>{jie-public}
+
+     % <emph>package and environment declarations</emph> %
+
+     \<b>newtheorem</b>{thm}{Theorem}[section]
+     \<b>newtheorem</b>{theorem}[thm]{Theorem}
+     \<b>newtheorem</b>{lemma}[thm]{Lemma}
+     \<b>newtheorem</b>{proposition}[thm]{Proposition}
+     \<b>newtheorem</b>{corollary}[thm]{Corollary}
+     \<b>theoremstyle</b>{definition}
+     \<b>newtheorem{</b>definition}[thm]{Definition}
+     \<b>newtheorem</b>{remark}[thm]{Remark}
+     \<b>newtheorem</b>{example}[thm]{Example}
+     \<b>newtheorem</b>{conjecture}[thm]{Conjecture}
+
+
+     \<b>title</b>{Article title}
+
+     \<b>author</b>{First Author}
+     \<b>address</b>{First Author address, country}
+     \<b>email</b>{First Author email Address}
+     \<b>thanks</b>{...}
+
+     \<b>author</b>{Second Author}
+     \<b>address</b>{Second Author address, country}
+     \<b>email</b>{Second Author email Address}
+     \<b>thanks</b>{ ... }
+
+     \<b>date</b>{Month, Day, Year}
+
+     \<b>keywords</b>{...}
+     \<b>subjclass</b>{...}
+
+     \<b>begin{document}</b>
+     \<b>begin{abstract}</b>
+     ...
+     \<b>end{abstract}</b>
+
+     \<b>maketitle</b>
+
+     \<b>section{Section title}</b>
+
+     \<b>begin{theorem}</b>
+     ...
+     \<b>end{theorem}</b>
+
+     \<b>begin{proof}</b>
+     ...
+     \<b>end{proof}</b>
+
+
+     { <emph>article content and list of references</emph> }
+
+     \<b>end{document}</B>
+</pre>
+
+<p>Typographic markup (such as italicization, embolding, centering, vertical space skipping) will generally be removed
+by publishers after receipt of an author-prepared document since final document appearance is much more easily
+controlled through generic tags.  Section titles are best handled by LaTeX <code>\section</code> tags, references
+by <code>\cite</code>, and bibliographies through <code>\bibitem</code> (or <code>\bibliography</code>).  The RMMC LaTeX
+style uses AMS-LaTeX to handle mathematical notation.  Preparation of displayed mathematics is best done at a
+column-width as near as possible to the width to be used in final publication.</p>
+
+<p>The advantages of generic markup extend to publishers beyond RMMC.  Even in cases where it is not definite that the
+article will be published by RMMC, generic preparation with <code>rmj-public</code> or <code>amsart</code> and the
+AMS-LaTeX macros will ease publication and general communication to wide audiences.</p>
+
+</body>
+</html>
